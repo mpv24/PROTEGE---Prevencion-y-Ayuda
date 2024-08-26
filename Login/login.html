@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protege - Iniciar Sesión</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .login-container h1 {
+            font-size: 24px;
+            color: #1d2951;
+            margin-bottom: 40px;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .input-group i {
+            margin-right: 10px;
+            color: #1d2951;
+        }
+        .input-group select,
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            outline: none;
+        }
+        .login-container input[type="submit"] {
+            background-color: #1d2951;
+            color: #fff;
+            cursor: pointer;
+            width: 50%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #16325c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>INICIAR SESIÓN</h1>
+        <form action="../Inicio/inicio.html" method="post">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <select id="user-type" name="user_type">
+                    <option value="invitado">Invitado</option>
+                    <option value="profesional">Profesional</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Ingresar Usuario" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Ingresar Contraseña" required>
+            </div>
+            <input type="submit" value="Ingresar">
+        </form>
+        <div class="actions">
+            ¿No tienes una cuenta? <a href="./registrar.html"> Registrate</a>
+        </div>
+    </div>
+
+</body>
+</html>
