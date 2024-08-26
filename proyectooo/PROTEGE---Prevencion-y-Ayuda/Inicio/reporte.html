@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <!-- Encabezado -->
+    <div class="header">
+        <div class="logo">
+            <img src="./img/logo.png" alt="Protege Logo"> <!-- Asegúrate de usar la ruta correcta de la imagen -->
+        </div>
+        <nav>
+            <a href="#">INICIO</a>
+            <a href="#">RECURSOS</a>
+            <a href="#">FORO</a>
+            <a href="#">PROFESIONALES</a>
+            <a href="#">CALENDARIO</a>
+        </nav>
+
+        <div class="profile-menu">
+            <div class="profile-icon">
+                <img src="./img/user.png" alt="User Icon"> <!-- Ruta del icono de perfil -->
+            </div>
+            <div class="dropdown-menu">
+                <a href="#">Perfil</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+        <h2>INTRODUCCIÓN SOBRE EL MALTRATO Y ABUSO</h2>
+        <p>MENSAJE DE APOYO</p>
+    </div>
+
+    <!-- Botón de reportes -->
+    <button class="report-button">REPORTES</button>
+
+    <div id="reportForm" class="modal">
+        <div class="modal-content">
+            <h2>Agregar Reporte</h2>
+            <textarea placeholder="Agregar reporte"></textarea>
+            <h3>Sugerencias (Opcional)</h3>
+            <textarea placeholder="Opcional"></textarea><br>
+            <button>Enviar</button>
+        </div>
+    </div>
+
+    <button id="reportButton" class="report-button">Reportes</button>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protege - Perfil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: #f3f3f3;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color:#1a2d55;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .perfil {
+            padding: 20px;
+            background-color: white;
+            max-width: 800px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .perfil h2 {
+            margin-top: 0;
+        }
+        .perfil .detalles {
+            margin-bottom: 20px;
+        }
+        .guardados {
+            background-color: #e9ecf2;
+            padding: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .guardados div {
+            width: 48%;
+        }
+        .guardados div span {
+            display: block;
+            padding: 10px;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .charlas {
+            width: 35%;
+            background-color: white;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .charlas h3 {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Protege Logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Recursos</a>
+            <a href="#">Foro</a>
+            <a href="#">Profesionales</a>
+            <a href="#">Calendario</a>
+        </nav>
+        <div class="user-icon">
+            <img src="user-icon.webp" alt="User Icon">
+        </div>
+    </header>
+
+    <div class="perfil">
+        <h2>Mi Perfil</h2>
+        <div class="detalles">
+            <p><strong>Nombre:</strong></p>
+            <p><strong>Apellido:</strong></p>
+            <p><strong>Edad:</strong></p>
+        </div>
+
+        <div class="charlas">
+            <h3>Charlas</h3>
+            <p>Fecha: 06/08/2024 09:00 </p>
+            <p>Asesoría</p>
+        </div>
+
+        <div class="guardados">
+            <div>
+                <strong>Actividad</strong>
+                <span>Archivo descargado</span>
+                <span>Zona de lectura</span>
+            </div>
+            <div>
+                <strong>Fecha de Realización</strong>
+                <span>12/08/2024</span>
+                <span>06/08/2024</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

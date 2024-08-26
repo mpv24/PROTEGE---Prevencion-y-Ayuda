@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro - Protege</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            background-color: #f3f3f3;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #1a2d55;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            background-color: #1a2d55;
+            color: white;
+            width: 200px;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .sidebar h3 {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .sidebar h3:hover {
+            cursor: pointer;
+        }
+
+        .sidebar .submenu {
+            margin-left: 20px;
+            display: none;
+        }
+
+        .sidebar h3 + .submenu {
+            display: block;
+        }
+
+        .forum-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .chat-container {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .chat-header {
+            background-color: #aad4ea;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .chat-message {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+        }
+
+        .chat-message img {
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .chat-input-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #aad4ea;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .chat-input-container input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            margin-right: 10px;
+        }
+
+        .chat-input-container img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Protege Logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Recursos</a>
+            <a href="#">Foro</a>
+            <a href="#">Profesionales</a>
+            <a href="#">Calendario</a>
+        </nav>
+        <div class="user-icon">
+            <img src="user-icon.webp" alt="User Icon">
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <h3>Abuso Sexual</h3>
+        <h3>Maltrato Intrafamiliar</h3>
+        <h3>Maltrato Físico</h3>
+        <h3>Maltrato Emocional</h3>
+    </div>
+
+    <div class="forum-content">
+        <div class="chat-container">
+            <div class="chat-header">Abuso Sexual</div>
+
+            <div class="chat-message">
+                <img src="user-icon.webp" alt="User 1" style="border: 2px solid red;">
+                <div>Mensaje del usuario 1</div>
+            </div>
+
+            <div class="chat-message">
+                <img src="user-icon.webp" alt="User 2" style="border: 2px solid green;">
+                <div>Mensaje de usuario 2</div>
+            </div>
+
+            <div class="chat-message">
+                <img src="user-icon.webp" alt="User 3" style="border: 2px solid blue;">
+                <div>Mensaje del usuario 3</div>
+            </div>
+
+            <div class="chat-message">
+                <img src="user-icon.webp" alt="User 4" style="border: 2px solid yellow;">
+                <div>Mensaje del usuario 4</div>
+            </div>
+
+            <div class="chat-input-container">
+                <input type="text" placeholder="Escribe aquí">
+                <img src="save.png" alt="Enviar">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
